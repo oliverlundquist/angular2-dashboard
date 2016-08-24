@@ -1,1 +1,10 @@
 <h1>Products</h1>
+<div class="card-wrapper">
+	<div *ngFor="let product of products" class="card">
+		<div class="card-header">{{ product.type }}</div>
+		<div class="card-body">
+			<div>{{ product.id }}</div>
+		</div>
+	</div>
+</div>
+<div>end of cards</div>

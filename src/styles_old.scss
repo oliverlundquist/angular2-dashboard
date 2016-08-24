@@ -1,5 +1,5 @@
-$light-green: #2ecc71;
-$dark-green: #27ae60;
+$light-green: #85b125;
+$dark-green: #7aa61f;
 $darker-green: darken($dark-green, 3%);
 
 html, body, .container, .content-container {
@@ -17,7 +17,6 @@ td {
 
 .header {
 	background-color: $light-green;
-	padding:0.5rem;
 	display: flex;
 }
 
@@ -55,16 +54,16 @@ td {
 }
 
 .content-container {
-	// display: flex;
+	display: flex;
 }
 
 .sidebar {
 	color: #fff;
 	background-color: $dark-green;
+	min-width: 100px;
 	flex: 0;
 	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
+	flex-flow: column nowrap;
 	text-align:center;
 }
 
@@ -77,14 +76,16 @@ td {
 	color: #fff;
 	text-decoration: none;
 	font-size:0.8rem;
-	padding: 0.5rem 0.7rem;
+	padding: 0.7rem 0;
 	display:block;
-	// border:1px solid $dark-green;
+	border-top:1px solid $dark-green;
+	border-bottom:1px solid $dark-green;
 }
 
 .sidebar-nav-item.active {
 	background-color: $light-green;
-	// border:1px solid $darker-green;
+	border-top:1px solid $darker-green;
+	border-bottom:1px solid $darker-green;
 }
 
 .sidebar-nav-item:hover {
@@ -92,7 +93,7 @@ td {
 }
 
 .sidebar-nav-item-label {
-	// padding-top:5px;
+	padding-top:5px;
 	display:block;
 }
 

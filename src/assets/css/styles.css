@@ -9,7 +9,8 @@ td {
   padding-right: 1.5rem; }
 
 .header {
-  background-color: #85b125;
+  background-color: #2ecc71;
+  padding: 0.5rem;
   display: flex; }
 
 .header-logo {
@@ -39,16 +40,13 @@ td {
 .header-nav-divider {
   border-right: 1px solid #fff; }
 
-.content-container {
-  display: flex; }
-
 .sidebar {
   color: #fff;
-  background-color: #7aa61f;
-  min-width: 100px;
+  background-color: #27ae60;
   flex: 0;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-around;
   text-align: center; }
 
 .content {
@@ -59,21 +57,16 @@ td {
   color: #fff;
   text-decoration: none;
   font-size: 0.8rem;
-  padding: 0.7rem 0;
-  display: block;
-  border-top: 1px solid #7aa61f;
-  border-bottom: 1px solid #7aa61f; }
+  padding: 0.5rem 0.7rem;
+  display: block; }
 
 .sidebar-nav-item.active {
-  background-color: #85b125;
-  border-top: 1px solid #71991d;
-  border-bottom: 1px solid #71991d; }
+  background-color: #2ecc71; }
 
 .sidebar-nav-item:hover {
   text-decoration: underline; }
 
 .sidebar-nav-item-label {
-  padding-top: 5px;
   display: block; }
 
 .card-wrapper {
@@ -94,7 +87,7 @@ td {
   margin-bottom: 1rem; }
 
 .card-header {
-  background-color: #85b125;
+  background-color: #2ecc71;
   padding: 0.5rem;
   color: #fff; }
 
