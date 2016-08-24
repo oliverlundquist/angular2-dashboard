@@ -25,7 +25,7 @@ export class ProductsComponent implements OnInit {
               .map(this.extractData)
               .map(this.flattenJsonApiAttributes)
               .catch(this.handleError)
-              .subscribe(response => { console.log(response); this.products = response });
+              .subscribe(response => this.products = response);
   }
 
   private extractData(res: Response) {
